@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Project-Management-Portfolio-Optimization'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.portfolio-manager-verification]
+path = 'contracts/portfolio-manager-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.risk-assessment]
+path = 'contracts/risk-assessment.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
